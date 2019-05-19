@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+}
+
+
+/*kontener*/
+.main_width {
+    /*border: 1px solid red;*/
+    max-width: 1068px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.green_text {
+    font-weight: 700;
+    color: #27C7AB;
+
+}
+
+
+/*TYLKO HEADER */
+.main_width div.header__logo {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+#logoOn {
+    font-weight: 900;
+}
+
+header {
+    background: black;
+    color: white;
+}
+
+header {
+    text-transform: uppercase;
+
+}
+
+.header_navig li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.header_navig li:first-child {
+    margin-right: 24px;
+
+}
+
+.header_navig_droptop a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 1px;
+
+}
+
+.header_navig_dropdown li {
+    display: block;
+}
+
+.header_navig_droptop .header_navig_dropdown {
+    font-family: 'Arial', sans-serif;
+    text-transform: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    line-height: 20px;
+    left: -10px;
+    /*gradient na dropdown, żeby nie znikał na pointerze pomiędzy */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 11%, rgba(0, 0, 0, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 11%, rgba(0, 0, 0, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 11%, rgba(0, 0, 0, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0); /* IE6-9 */
+}
+
+.header_navig_dropdown:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: #000000 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: calc(50% - 10px);
+
+}
+
+/*poprawiamy wygląd po gradiencie*/
+.header_navig_dropdown .dropdown_entry1 {
+    padding-top: 10px;
+}
+
+.header_navig_droptop {
+    line-height: 41px;
+    position: relative;
+    margin-right: 10px;
+    letter-spacing: 1.2px;
+    margin-left: 22px;
+}
+
+.header_navig_droptop:hover .header_navig_dropdown, .header_navig_dropdown:hover {
+    display: block;
+    z-index: 1;
+}
+
+
+/*----------------------------------------SEKCJA 1--------------------------------------------*/
+
+.gradient_back {
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,d2d1d6+100 */
+    background: rgb(255, 255, 255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(210, 209, 214, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(210, 209, 214, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(210, 209, 214, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d2d1d6', GradientType=0); /* IE6-9 */
+}
+
+.post {
+    display: flex;
+    height: 503px;
+    position: relative;
+    justify-content: space-between;
+
+}
+
+.post:after {
+    content: '>';
+    color: #27C7AB;
+    position: absolute;
+    font-size: 77px;
+    right: 16px;
+    top: 42%;
+}
+
+.post:before {
+    content: '<';
+    color: #27C7AB;
+    position: absolute;
+    font-size: 77px;
+    left: 6px;
+    top: 42%;
+}
+
+.post_image {
+    width: 43%;
+    height: 423px;
+    background: url(../images/black_chair.png) no-repeat;
+    background-size: cover;
+    background-position-x: -37px;
+    margin-top: 68px;
+}
+
+.post_content {
+    margin-top: 124px;
+    width: 55.5%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.post_content .post_info {
+    margin-left: 2px;
+    text-align: center;
+    width: 75%;
+    padding-top: 1px;
+    letter-spacing: 0.47pt;
+    line-height: 22px;
+}
+
+
+.post_content h1 {
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    margin-left: 37px;
+    font-size: 40px;
+    letter-spacing: -0.1pt;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    position: relative;
+}
+
+.post_content button {
+    text-transform: uppercase;
+    background-color: #27C7AB;
+    border: none;
+    width: 265px;
+    height: 52px;
+    border-radius: 10px;
+    position: absolute;
+    color: white;
+    margin-left: 87px;
+    margin-top: 30px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.post_content button p {
+    letter-spacing: 0.3pt;
+    margin-left: 13px;
+    margin-top: 6px;
+}
+
+/*-----------------------------------sekcja smallbox------------------------------------------*/
+
+.small_box {
+    width: 331px;
+    height: 224px;
+    margin-top: 4px;
+    position: relative;
+}
+
+.small_box:first-child {
+    background: url("../images/box1_img.jpg");
+}
+
+.main_width .small_box:nth-child(2){
+    background: url("../images/box2_img.jpg");
+}
+
+.main_width .small_box:last-child {
+    margin-right: 14px;
+    width: 337px;
+    height: 250px;
+    margin-top: 28px;
+    border: 1px cornflowerblue solid;
+}
+
+.main_width .small_box:last-child p:first-child {
+    position: absolute;
+    top: 24px;
+    left: 21px;
+    font-weight: 600;
+    word-spacing: -1px;
+}
+
+.whitebar {
+    width: 329px;
+    background: white;
+    height: 62px;
+    position: absolute;
+    opacity: 0.4;
+    left: 1px;
+    bottom: 15px;
+}
+
+.small_box .chair_name {
+    position: absolute;
+    top: 159px;
+    z-index: 1;
+    left: 20px;
+    font-weight: 600;
+}
+
+.green_underline:after {
+    position: absolute;
+    content: '';
+    background: #27C7AB;
+    width: 8.6em;
+    height: 7px;
+    top: 22px;
+    left: -3px;
+}
+
+.main_width .small_box:last-child p:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+footer {
+    height: 2em;
+}
+
+/*elementy dotyczące wielu sekcji*/
+.green_text {
+    color: #27C7AB;
+}

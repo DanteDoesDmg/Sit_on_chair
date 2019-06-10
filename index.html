@@ -12,8 +12,8 @@
 <header>
     <div class="main_width">
 
-        <div class="header__logo">
-            Sit <span id="logoOn" class="green_text">on</span> chair
+        <div class="logo">
+            Sit <span class="logoOn green_text">on</span> chair
         </div>
         <ul class="header_navig">
             <li class="header_navig_droptop">
@@ -46,12 +46,12 @@
             <div class="post_content">
                 <h1>sit <span class="green_text">on</span> our <span class="green_text">chair</span></h1>
 
-                <p class ="post_info"> Lorem ipsum dolor sit amet enim. Etiam ullamcorper.
+                <p class="post_info"> Lorem ipsum dolor sit amet enim. Etiam ullamcorper.
                     Suspendisse a pellentesque dui, non felis. Maecenas
                     malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula
                     Ut molestie a, ultricies porta urna.</p>
 
-                <button><p>ZOBACZ WIĘCEJ</p></button>
+                <button class="big_button"><p>ZOBACZ WIĘCEJ</p></button>
             </div>
 
         </article>
@@ -59,7 +59,7 @@
 </section>
 
 <section class=portfolio>
-    <div class="main_width"  id = "small_box_section">
+    <div class="main_width">
         <div class="small_box">
             <p class="chair_name green_underline">Chair CLAIR</p>
             <div class="whitebar"></div>
@@ -71,19 +71,91 @@
         <div class="small_box">
             <p class="green_underline">Finds all inputs</p>
             <p>Finds all inputs that are not checked and
-            highlists the next sibling span. Notice there
-            is no change when clicking the checkboxes
-            since no click events have been linked.</p>
+                highlists the next sibling span. Notice there
+                is no change when clicking the checkboxes
+                since no click events have been linked.</p>
             <p>Notice there
                 is no change when clicking the checkboxes
                 since no click events have been</p>
         </div>
     </div>
 </section>
+<section class="pricing">
+    <div class="main_width">
+        <h2 class="green_underline section_title">Cennik</h2>
+        <div class="big_box">
+            <div class="top_circle"></div>
+            <p>BASIC PLAN</p>
+            <div class="price_circle">
+                <p class='price'>85</p>
+            </div>
+            <ul class="services">
+                <li>Zakup towaru + dowóz</li>
+                <li>Serwis</li>
+            </ul>
+            <button>Dołącz</button>
+        </div>
+        <div class="big_box">
+            <div class="top_circle"></div>
+            <p>STANDARD PLAN</p>
+            <div class="price_circle">
+                <p class='price'>95</p>
+            </div>
+            <ul class="services">
+                <li>Zakup towaru + dowóz</li>
+                <li>Serwis</li>
+                <li>Gwarancja 5 lat</li>
+            </ul>
+            <button>Dołącz</button>
+        </div>
+        <div class="big_box">
+            <div class="top_circle"></div>
+            <p>ADvance plan</p>
+            <div class="price_circle">
+                <p class='price --3digit --full'>211</p>
+            </div>
+            <ul class="services">
+                <li>Zakup towaru + dowóz</li>
+                <li>Serwis</li>
+                <li>Gwarancja 5 lat</li>
+                <li>Porady projektanta</li>
+            </ul>
+            <button>Dołącz</button>
+        </div>
+    </div>
+</section>
 
+<section class="form">
+<div class="main_width">
+    <h2 class="green_underline section_title">Kontakt</h2>
+    <form>
+    <input class="text_input" placeholder="Imię">
+    <input class="text_input" placeholder="email">
+    <textarea class = "text_input --big" placeholder="Wiadomość"></textarea>
+        <div class="checkbox check-box">
+            <input type="checkbox" id="transport" data-transport-price="200" checked="checked">
+            <label for="transport">Zgadzam się na przetwarzanie danych osobowych</label>
+        </div>
+        <button class="big_button" type="submit">WYŚLIJ</button>
+    </form>
+    <img src="images/red_chair.png">
+</div>
+
+
+</section>
 <footer class="main_width">
-    <p>&copy; 2019 CodersLab</p>
-    <p>Logo</p>
+    <p id="copyright">Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
+
+    <div id="footer_logos">
+        <a href="#"><img src="images/flickr.png"></a>
+        <a href="#"><img src="images/vimeo.png"></a>
+        <a href="#"><img src="images/pinterest.png"></a>
+        <a href="#"><img src="images/twitter.png"></a>
+
+    </div>
+    <div class="logo">
+        Sit <span class="logoOn">on</span> chair
+    </div>
 </footer>
 </body>
 </html>
